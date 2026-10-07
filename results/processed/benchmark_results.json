@@ -1,0 +1,1678 @@
+[
+  {
+    "circuit_name": "bell_state_2q",
+    "noise_level": "low",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 2,
+      "qubits_after": 4,
+      "depth_before": 3,
+      "depth_after": 5,
+      "ops_before": {
+        "measure": 2,
+        "h": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "rz": 2,
+        "measure": 2,
+        "sx": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 1,
+      "two_qubit_gates_after": 1,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.009061699965968728,
+      "hilbert_dim": 4,
+      "memory_bytes": 64,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 64,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "11": 0.509521484375,
+        "00": 0.490478515625
+      },
+      "noisy": {
+        "11": 0.49609375,
+        "00": 0.4814453125,
+        "10": 0.0107421875,
+        "01": 0.01171875
+      },
+      "mitigated": {
+        "11": 0.49688720703124983,
+        "00": 0.48242187500000017,
+        "01": 0.0107421875,
+        "10": 0.009948730468749998
+      },
+      "scale_dists": {
+        "1": {
+          "11": 0.49609375,
+          "00": 0.4814453125,
+          "10": 0.0107421875,
+          "01": 0.01171875
+        },
+        "3": {
+          "11": 0.49267578125,
+          "00": 0.4794921875,
+          "10": 0.01416015625,
+          "01": 0.013671875
+        },
+        "5": {
+          "11": 0.491455078125,
+          "00": 0.4775390625,
+          "10": 0.015380859375,
+          "01": 0.015625
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "11": 2087,
+        "00": 2009
+      },
+      "noisy": {
+        "11": 2032,
+        "00": 1972,
+        "10": 44,
+        "01": 48
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.0224609375,
+      "tvd_mitigated": 0.02069091796875,
+      "tvd_relative_error_reduction_pct": 7.880434782608696,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.977535037053537,
+      "fidelity_mitigated": 0.9793046126346792,
+      "fidelity_delta": 0.0017695755811422131,
+      "infidelity_noisy": 0.022464962946463052,
+      "infidelity_mitigated": 0.02069538736532084,
+      "relative_error_reduction_pct": 7.8770465162099015,
+      "hellinger_dist_noisy": 0.1062839804247406,
+      "hellinger_dist_mitigated": 0.10198917748683342,
+      "hellinger_relative_error_reduction_pct": 4.040875135409819
+    }
+  },
+  {
+    "circuit_name": "bell_state_2q",
+    "noise_level": "medium",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 2,
+      "qubits_after": 4,
+      "depth_before": 3,
+      "depth_after": 5,
+      "ops_before": {
+        "measure": 2,
+        "h": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "rz": 2,
+        "measure": 2,
+        "sx": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 1,
+      "two_qubit_gates_after": 1,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0009522000327706337,
+      "hilbert_dim": 4,
+      "memory_bytes": 64,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 64,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "11": 0.509521484375,
+        "00": 0.490478515625
+      },
+      "noisy": {
+        "11": 0.477294921875,
+        "00": 0.4658203125,
+        "10": 0.02978515625,
+        "01": 0.027099609375
+      },
+      "mitigated": {
+        "11": 0.4809977213541668,
+        "00": 0.46864827473958337,
+        "01": 0.024271647135416657,
+        "10": 0.026082356770833332
+      },
+      "scale_dists": {
+        "1": {
+          "11": 0.477294921875,
+          "00": 0.4658203125,
+          "10": 0.02978515625,
+          "01": 0.027099609375
+        },
+        "3": {
+          "11": 0.47314453125,
+          "00": 0.458740234375,
+          "10": 0.033935546875,
+          "01": 0.0341796875
+        },
+        "5": {
+          "11": 0.465087890625,
+          "00": 0.453369140625,
+          "10": 0.0419921875,
+          "01": 0.03955078125
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "11": 2087,
+        "00": 2009
+      },
+      "noisy": {
+        "11": 1955,
+        "00": 1908,
+        "10": 122,
+        "01": 111
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.056884765625,
+      "tvd_mitigated": 0.05035400390624991,
+      "tvd_relative_error_reduction_pct": 11.480686695279129,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.9431040833450175,
+      "fidelity_mitigated": 0.949637336431366,
+      "fidelity_delta": 0.006533253086348556,
+      "infidelity_noisy": 0.056895916654982504,
+      "infidelity_mitigated": 0.05036266356863395,
+      "relative_error_reduction_pct": 11.48281541180939,
+      "hellinger_dist_noisy": 0.16989567133183647,
+      "hellinger_dist_mitigated": 0.15970793894866261,
+      "hellinger_relative_error_reduction_pct": 5.99646377292062
+    }
+  },
+  {
+    "circuit_name": "bell_state_2q",
+    "noise_level": "high",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 2,
+      "qubits_after": 4,
+      "depth_before": 3,
+      "depth_after": 5,
+      "ops_before": {
+        "measure": 2,
+        "h": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "rz": 2,
+        "measure": 2,
+        "sx": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 1,
+      "two_qubit_gates_after": 1,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0005692997947335243,
+      "hilbert_dim": 4,
+      "memory_bytes": 64,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 64,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "11": 0.509521484375,
+        "00": 0.490478515625
+      },
+      "noisy": {
+        "11": 0.450927734375,
+        "00": 0.436279296875,
+        "10": 0.057373046875,
+        "01": 0.055419921875
+      },
+      "mitigated": {
+        "11": 0.45794677734375006,
+        "00": 0.4430948893229167,
+        "01": 0.0486043294270833,
+        "10": 0.050354003906250014
+      },
+      "scale_dists": {
+        "1": {
+          "11": 0.450927734375,
+          "00": 0.436279296875,
+          "10": 0.057373046875,
+          "01": 0.055419921875
+        },
+        "3": {
+          "11": 0.4326171875,
+          "00": 0.4228515625,
+          "10": 0.07568359375,
+          "01": 0.06884765625
+        },
+        "5": {
+          "11": 0.41943359375,
+          "00": 0.4091796875,
+          "10": 0.0888671875,
+          "01": 0.08251953125
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "11": 2087,
+        "00": 2009
+      },
+      "noisy": {
+        "11": 1847,
+        "00": 1787,
+        "10": 235,
+        "01": 227
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.11279296875,
+      "tvd_mitigated": 0.09895833333333329,
+      "tvd_relative_error_reduction_pct": 12.265512265512307,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.8872056085580544,
+      "fidelity_mitigated": 0.9010401899934479,
+      "fidelity_delta": 0.013834581435393511,
+      "infidelity_noisy": 0.11279439144194559,
+      "infidelity_mitigated": 0.09895981000655207,
+      "relative_error_reduction_pct": 12.26530970071687,
+      "hellinger_dist_noisy": 0.24100638091677246,
+      "hellinger_dist_mitigated": 0.22531895615082487,
+      "hellinger_relative_error_reduction_pct": 6.509132540920143
+    }
+  },
+  {
+    "circuit_name": "ghz_state_3q",
+    "noise_level": "low",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 4,
+      "depth_after": 6,
+      "ops_before": {
+        "measure": 3,
+        "cx": 2,
+        "h": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "measure": 3,
+        "rz": 2,
+        "cx": 2,
+        "sx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 2,
+      "two_qubit_gates_after": 2,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0007058999035507441,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "000": 0.4931640625,
+        "111": 0.5068359375
+      },
+      "noisy": {
+        "111": 0.488037109375,
+        "000": 0.476318359375,
+        "110": 0.0078125,
+        "101": 0.00634765625,
+        "001": 0.0078125,
+        "100": 0.004150390625,
+        "010": 0.00439453125,
+        "011": 0.005126953125
+      },
+      "mitigated": {
+        "001": 0.007222493489583335,
+        "111": 0.49094645182291646,
+        "101": 0.006551106770833333,
+        "100": 0.003153483072916666,
+        "011": 0.004170735677083334,
+        "010": 0.004333496093749999,
+        "110": 0.005696614583333331,
+        "000": 0.4779256184895835
+      },
+      "scale_dists": {
+        "1": {
+          "111": 0.488037109375,
+          "000": 0.476318359375,
+          "110": 0.0078125,
+          "101": 0.00634765625,
+          "001": 0.0078125,
+          "100": 0.004150390625,
+          "010": 0.00439453125,
+          "011": 0.005126953125
+        },
+        "3": {
+          "111": 0.483642578125,
+          "000": 0.46923828125,
+          "110": 0.0087890625,
+          "101": 0.0087890625,
+          "001": 0.012451171875,
+          "100": 0.005126953125,
+          "011": 0.005615234375,
+          "010": 0.00634765625
+        },
+        "5": {
+          "111": 0.4775390625,
+          "000": 0.466796875,
+          "110": 0.013671875,
+          "101": 0.0078125,
+          "001": 0.012939453125,
+          "100": 0.00732421875,
+          "011": 0.0078125,
+          "010": 0.006103515625
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "000": 2020,
+        "111": 2076
+      },
+      "noisy": {
+        "111": 1999,
+        "000": 1951,
+        "110": 32,
+        "101": 26,
+        "001": 32,
+        "100": 17,
+        "010": 18,
+        "011": 21
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.03564453125,
+      "tvd_mitigated": 0.031127929687500028,
+      "tvd_relative_error_reduction_pct": 12.671232876712251,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.9643549116628003,
+      "fidelity_mitigated": 0.9688720571932279,
+      "fidelity_delta": 0.004517145530427591,
+      "infidelity_noisy": 0.035645088337199704,
+      "infidelity_mitigated": 0.031127942806772113,
+      "relative_error_reduction_pct": 12.67256090852056,
+      "hellinger_dist_noisy": 0.13410540999632778,
+      "hellinger_dist_mitigated": 0.12524780471254515,
+      "hellinger_relative_error_reduction_pct": 6.60495746146645
+    }
+  },
+  {
+    "circuit_name": "ghz_state_3q",
+    "noise_level": "medium",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 4,
+      "depth_after": 6,
+      "ops_before": {
+        "measure": 3,
+        "cx": 2,
+        "h": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "measure": 3,
+        "rz": 2,
+        "cx": 2,
+        "sx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 2,
+      "two_qubit_gates_after": 2,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0007124000694602728,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "000": 0.4931640625,
+        "111": 0.5068359375
+      },
+      "noisy": {
+        "111": 0.462646484375,
+        "000": 0.450927734375,
+        "110": 0.0166015625,
+        "101": 0.015625,
+        "001": 0.0185546875,
+        "100": 0.00927734375,
+        "011": 0.01220703125,
+        "010": 0.01416015625
+      },
+      "mitigated": {
+        "001": 0.014160156250000002,
+        "111": 0.4708658854166667,
+        "101": 0.01267496744791666,
+        "100": 0.008015950520833334,
+        "011": 0.010192871093749993,
+        "010": 0.013305664062499993,
+        "110": 0.012593587239583318,
+        "000": 0.45819091796875006
+      },
+      "scale_dists": {
+        "1": {
+          "111": 0.462646484375,
+          "000": 0.450927734375,
+          "110": 0.0166015625,
+          "101": 0.015625,
+          "001": 0.0185546875,
+          "100": 0.00927734375,
+          "011": 0.01220703125,
+          "010": 0.01416015625
+        },
+        "3": {
+          "111": 0.443359375,
+          "000": 0.435791015625,
+          "110": 0.03173828125,
+          "101": 0.015625,
+          "001": 0.02734375,
+          "100": 0.013427734375,
+          "011": 0.016845703125,
+          "010": 0.015869140625
+        },
+        "5": {
+          "111": 0.427490234375,
+          "000": 0.42138671875,
+          "110": 0.038330078125,
+          "101": 0.022705078125,
+          "001": 0.0361328125,
+          "010": 0.017578125,
+          "100": 0.015625,
+          "011": 0.020751953125
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "000": 2020,
+        "111": 2076
+      },
+      "noisy": {
+        "111": 1895,
+        "000": 1847,
+        "110": 68,
+        "101": 64,
+        "001": 76,
+        "100": 38,
+        "011": 50,
+        "010": 58
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.08642578125,
+      "tvd_mitigated": 0.07094319661458329,
+      "tvd_relative_error_reduction_pct": 17.914312617702503,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.9135740558317867,
+      "fidelity_mitigated": 0.9290568031894889,
+      "fidelity_delta": 0.015482747357702165,
+      "infidelity_noisy": 0.08642594416821325,
+      "infidelity_mitigated": 0.07094319681051109,
+      "relative_error_reduction_pct": 17.914467127564908,
+      "hellinger_dist_noisy": 0.21021255930384825,
+      "hellinger_dist_mitigated": 0.1900633387063449,
+      "hellinger_relative_error_reduction_pct": 9.58516497027135
+    }
+  },
+  {
+    "circuit_name": "ghz_state_3q",
+    "noise_level": "high",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 4,
+      "depth_after": 6,
+      "ops_before": {
+        "measure": 3,
+        "cx": 2,
+        "h": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "measure": 3,
+        "rz": 2,
+        "cx": 2,
+        "sx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 2,
+      "two_qubit_gates_after": 2,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0008038000669330359,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "000": 0.4931640625,
+        "111": 0.5068359375
+      },
+      "noisy": {
+        "111": 0.410888671875,
+        "000": 0.405029296875,
+        "110": 0.040283203125,
+        "100": 0.024658203125,
+        "011": 0.0283203125,
+        "101": 0.023681640625,
+        "001": 0.03857421875,
+        "010": 0.028564453125
+      },
+      "mitigated": {
+        "001": 0.029134114583333332,
+        "111": 0.42732747395833326,
+        "100": 0.02006022135416667,
+        "101": 0.020548502604166657,
+        "011": 0.02461751302083332,
+        "010": 0.02467854817708333,
+        "110": 0.031575520833333315,
+        "000": 0.42205810546875
+      },
+      "scale_dists": {
+        "1": {
+          "111": 0.410888671875,
+          "000": 0.405029296875,
+          "110": 0.040283203125,
+          "100": 0.024658203125,
+          "011": 0.0283203125,
+          "101": 0.023681640625,
+          "001": 0.03857421875,
+          "010": 0.028564453125
+        },
+        "3": {
+          "111": 0.374755859375,
+          "000": 0.365478515625,
+          "101": 0.036865234375,
+          "100": 0.031005859375,
+          "001": 0.06396484375,
+          "110": 0.056884765625,
+          "010": 0.0361328125,
+          "011": 0.034912109375
+        },
+        "5": {
+          "111": 0.342529296875,
+          "000": 0.33251953125,
+          "100": 0.040771484375,
+          "001": 0.08154296875,
+          "101": 0.041748046875,
+          "110": 0.074462890625,
+          "011": 0.04248046875,
+          "010": 0.0439453125
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "000": 2020,
+        "111": 2076
+      },
+      "noisy": {
+        "111": 1683,
+        "000": 1659,
+        "110": 165,
+        "100": 101,
+        "011": 116,
+        "101": 97,
+        "001": 158,
+        "010": 117
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.18408203125,
+      "tvd_mitigated": 0.15061442057291669,
+      "tvd_relative_error_reduction_pct": 18.180813439434118,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.8159093747322084,
+      "fidelity_mitigated": 0.8493737350577247,
+      "fidelity_delta": 0.03346436032551636,
+      "infidelity_noisy": 0.18409062526779163,
+      "infidelity_mitigated": 0.15062626494227527,
+      "relative_error_reduction_pct": 18.17819906735428,
+      "hellinger_dist_noisy": 0.3110031833772481,
+      "hellinger_dist_mitigated": 0.2799736714506096,
+      "hellinger_relative_error_reduction_pct": 9.97723289828824
+    }
+  },
+  {
+    "circuit_name": "non_local_bell_3q",
+    "noise_level": "low",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 3,
+      "depth_after": 5,
+      "ops_before": {
+        "measure": 3,
+        "h": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "cx": 4,
+        "measure": 3,
+        "rz": 2,
+        "sx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 1,
+      "two_qubit_gates_after": 4,
+      "swap_gates_inserted": 1
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0005886999424546957,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "000": 0.4931640625,
+        "101": 0.5068359375
+      },
+      "noisy": {
+        "101": 0.48583984375,
+        "000": 0.472412109375,
+        "100": 0.011962890625,
+        "001": 0.012939453125,
+        "111": 0.00634765625,
+        "011": 0.002685546875,
+        "110": 0.002197265625,
+        "010": 0.005615234375
+      },
+      "mitigated": {
+        "001": 0.009419759114583336,
+        "111": 0.004272460937500002,
+        "100": 0.010030110677083334,
+        "101": 0.49055989583333337,
+        "011": 0.001973470052083334,
+        "010": 0.004028320312500002,
+        "110": 0.0007324218749999971,
+        "000": 0.4789835611979166
+      },
+      "scale_dists": {
+        "1": {
+          "101": 0.48583984375,
+          "000": 0.472412109375,
+          "100": 0.011962890625,
+          "001": 0.012939453125,
+          "111": 0.00634765625,
+          "011": 0.002685546875,
+          "110": 0.002197265625,
+          "010": 0.005615234375
+        },
+        "3": {
+          "101": 0.471923828125,
+          "000": 0.460693359375,
+          "100": 0.01806640625,
+          "110": 0.007568359375,
+          "001": 0.017333984375,
+          "111": 0.010498046875,
+          "010": 0.007568359375,
+          "011": 0.00634765625
+        },
+        "5": {
+          "101": 0.46337890625,
+          "000": 0.447265625,
+          "100": 0.021484375,
+          "110": 0.010009765625,
+          "001": 0.02490234375,
+          "111": 0.0146484375,
+          "010": 0.010986328125,
+          "011": 0.00732421875
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "000": 2020,
+        "101": 2076
+      },
+      "noisy": {
+        "101": 1990,
+        "000": 1935,
+        "100": 49,
+        "001": 53,
+        "111": 26,
+        "011": 11,
+        "110": 9,
+        "010": 23
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.041748046875,
+      "tvd_mitigated": 0.03045654296875003,
+      "tvd_relative_error_reduction_pct": 27.046783625730917,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.9582519252852812,
+      "fidelity_mitigated": 0.9695427298896886,
+      "fidelity_delta": 0.011290804604407345,
+      "infidelity_noisy": 0.04174807471471875,
+      "infidelity_mitigated": 0.030457270110311407,
+      "relative_error_reduction_pct": 27.04509053785574,
+      "hellinger_dist_noisy": 0.14524658340226637,
+      "hellinger_dist_mitigated": 0.12388055098428573,
+      "hellinger_relative_error_reduction_pct": 14.710179005592538
+    }
+  },
+  {
+    "circuit_name": "non_local_bell_3q",
+    "noise_level": "medium",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 3,
+      "depth_after": 5,
+      "ops_before": {
+        "measure": 3,
+        "h": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "cx": 4,
+        "measure": 3,
+        "rz": 2,
+        "sx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 1,
+      "two_qubit_gates_after": 4,
+      "swap_gates_inserted": 1
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0005801999941468239,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "000": 0.4931640625,
+        "101": 0.5068359375
+      },
+      "noisy": {
+        "101": 0.449951171875,
+        "000": 0.44287109375,
+        "100": 0.030029296875,
+        "110": 0.0068359375,
+        "001": 0.029296875,
+        "111": 0.018798828125,
+        "010": 0.015625,
+        "011": 0.006591796875
+      },
+      "mitigated": {
+        "001": 0.022155761718749986,
+        "111": 0.015157063802083324,
+        "100": 0.023640950520833308,
+        "101": 0.46413167317708337,
+        "011": 0.0024617513020833304,
+        "010": 0.010742187499999997,
+        "110": 0.0019124348958333287,
+        "000": 0.45979817708333326
+      },
+      "scale_dists": {
+        "1": {
+          "101": 0.449951171875,
+          "000": 0.44287109375,
+          "100": 0.030029296875,
+          "110": 0.0068359375,
+          "001": 0.029296875,
+          "111": 0.018798828125,
+          "010": 0.015625,
+          "011": 0.006591796875
+        },
+        "3": {
+          "101": 0.42138671875,
+          "000": 0.40576171875,
+          "100": 0.04443359375,
+          "111": 0.029541015625,
+          "001": 0.046630859375,
+          "010": 0.021728515625,
+          "011": 0.01708984375,
+          "110": 0.013427734375
+        },
+        "5": {
+          "101": 0.39306640625,
+          "000": 0.37255859375,
+          "100": 0.056884765625,
+          "111": 0.0361328125,
+          "011": 0.02490234375,
+          "010": 0.0322265625,
+          "001": 0.060302734375,
+          "110": 0.02392578125
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "000": 2020,
+        "101": 2076
+      },
+      "noisy": {
+        "101": 1843,
+        "000": 1814,
+        "100": 123,
+        "110": 28,
+        "001": 120,
+        "111": 77,
+        "010": 64,
+        "011": 27
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.107177734375,
+      "tvd_mitigated": 0.07607014973958333,
+      "tvd_relative_error_reduction_pct": 29.024297646165532,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.8928149058663885,
+      "fidelity_mitigated": 0.923911215582816,
+      "fidelity_delta": 0.031096309716427517,
+      "infidelity_noisy": 0.10718509413361155,
+      "infidelity_mitigated": 0.07608878441718403,
+      "relative_error_reduction_pct": 29.011785610473435,
+      "hellinger_dist_noisy": 0.23475767816194354,
+      "hellinger_dist_mitigated": 0.19696952973517484,
+      "hellinger_relative_error_reduction_pct": 16.096661341445536
+    }
+  },
+  {
+    "circuit_name": "non_local_bell_3q",
+    "noise_level": "high",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 3,
+      "depth_after": 5,
+      "ops_before": {
+        "measure": 3,
+        "h": 1,
+        "cx": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "cx": 4,
+        "measure": 3,
+        "rz": 2,
+        "sx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 1,
+      "two_qubit_gates_after": 4,
+      "swap_gates_inserted": 1
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0006443001329898834,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "000": 0.4931640625,
+        "101": 0.5068359375
+      },
+      "noisy": {
+        "101": 0.392578125,
+        "000": 0.379150390625,
+        "100": 0.06103515625,
+        "111": 0.034912109375,
+        "001": 0.069091796875,
+        "010": 0.031494140625,
+        "011": 0.0166015625,
+        "110": 0.01513671875
+      },
+      "mitigated": {
+        "001": 0.06170654296875,
+        "111": 0.02848307291666666,
+        "100": 0.0531005859375,
+        "101": 0.41843668619791674,
+        "011": 0.006856282552083333,
+        "010": 0.022298177083333325,
+        "110": 0.0061848958333333235,
+        "000": 0.40293375651041663
+      },
+      "scale_dists": {
+        "1": {
+          "101": 0.392578125,
+          "000": 0.379150390625,
+          "100": 0.06103515625,
+          "111": 0.034912109375,
+          "001": 0.069091796875,
+          "010": 0.031494140625,
+          "011": 0.0166015625,
+          "110": 0.01513671875
+        },
+        "3": {
+          "101": 0.32763671875,
+          "000": 0.309814453125,
+          "001": 0.08935546875,
+          "100": 0.09033203125,
+          "011": 0.037109375,
+          "111": 0.051025390625,
+          "110": 0.0419921875,
+          "010": 0.052734375
+        },
+        "5": {
+          "101": 0.278564453125,
+          "000": 0.2666015625,
+          "001": 0.10302734375,
+          "100": 0.103515625,
+          "010": 0.070556640625,
+          "110": 0.05810546875,
+          "111": 0.063232421875,
+          "011": 0.056396484375
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "000": 2020,
+        "101": 2076
+      },
+      "noisy": {
+        "101": 1608,
+        "000": 1553,
+        "100": 250,
+        "111": 143,
+        "001": 283,
+        "010": 129,
+        "011": 68,
+        "110": 62
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.228271484375,
+      "tvd_mitigated": 0.17862955729166663,
+      "tvd_relative_error_reduction_pct": 21.74688057041,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.7717258340674176,
+      "fidelity_mitigated": 0.8213648832341661,
+      "fidelity_delta": 0.04963904916674855,
+      "infidelity_noisy": 0.22827416593258243,
+      "infidelity_mitigated": 0.17863511676583388,
+      "relative_error_reduction_pct": 21.745364379694525,
+      "hellinger_dist_noisy": 0.3485982306955015,
+      "hellinger_dist_mitigated": 0.3061179002218548,
+      "hellinger_relative_error_reduction_pct": 12.186043052740851
+    }
+  },
+  {
+    "circuit_name": "qaoa_ansatz_3q_p2",
+    "noise_level": "low",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 16,
+      "depth_after": 26,
+      "ops_before": {
+        "cx": 8,
+        "rx": 6,
+        "rz": 4,
+        "h": 3,
+        "measure": 3,
+        "barrier": 1
+      },
+      "ops_after": {
+        "rz": 28,
+        "sx": 15,
+        "cx": 8,
+        "measure": 3,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 13,
+      "one_qubit_gates_after": 43,
+      "two_qubit_gates_before": 8,
+      "two_qubit_gates_after": 8,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0017037999350577593,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "111": 0.366943359375,
+        "000": 0.35205078125,
+        "001": 0.064453125,
+        "100": 0.065185546875,
+        "110": 0.064208984375,
+        "011": 0.06494140625,
+        "010": 0.01220703125,
+        "101": 0.010009765625
+      },
+      "noisy": {
+        "110": 0.07373046875,
+        "000": 0.33544921875,
+        "001": 0.067138671875,
+        "100": 0.070068359375,
+        "111": 0.341552734375,
+        "101": 0.02099609375,
+        "011": 0.071533203125,
+        "010": 0.01953125
+      },
+      "mitigated": {
+        "001": 0.06443277994791669,
+        "111": 0.3497314453125,
+        "100": 0.06719970703125003,
+        "101": 0.018269856770833346,
+        "011": 0.06813557942708333,
+        "010": 0.017700195312499993,
+        "110": 0.07114664713541667,
+        "000": 0.34338378906249994
+      },
+      "scale_dists": {
+        "1": {
+          "110": 0.07373046875,
+          "000": 0.33544921875,
+          "001": 0.067138671875,
+          "100": 0.070068359375,
+          "111": 0.341552734375,
+          "101": 0.02099609375,
+          "011": 0.071533203125,
+          "010": 0.01953125
+        },
+        "3": {
+          "110": 0.0791015625,
+          "000": 0.318359375,
+          "001": 0.071533203125,
+          "100": 0.076416015625,
+          "111": 0.32275390625,
+          "101": 0.028076171875,
+          "011": 0.078125,
+          "010": 0.025634765625
+        },
+        "5": {
+          "110": 0.084228515625,
+          "000": 0.302734375,
+          "001": 0.0771484375,
+          "100": 0.08203125,
+          "111": 0.306884765625,
+          "101": 0.033203125,
+          "010": 0.02880859375,
+          "011": 0.0849609375
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "111": 1503,
+        "000": 1442,
+        "001": 264,
+        "100": 267,
+        "110": 263,
+        "011": 266,
+        "010": 50,
+        "101": 41
+      },
+      "noisy": {
+        "110": 302,
+        "000": 1374,
+        "001": 275,
+        "100": 287,
+        "111": 1399,
+        "101": 86,
+        "011": 293,
+        "010": 80
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.0419921875,
+      "tvd_mitigated": 0.025899251302083367,
+      "tvd_relative_error_reduction_pct": 38.32364341085263,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.9958764856025697,
+      "fidelity_mitigated": 0.9977669278653761,
+      "fidelity_delta": 0.0018904422628064355,
+      "infidelity_noisy": 0.004123514397430306,
+      "infidelity_mitigated": 0.0022330721346238702,
+      "relative_error_reduction_pct": 45.84541438692496,
+      "hellinger_dist_noisy": 0.045430023261246164,
+      "hellinger_dist_mitigated": 0.033423944869599126,
+      "hellinger_relative_error_reduction_pct": 26.42762985747524
+    }
+  },
+  {
+    "circuit_name": "qaoa_ansatz_3q_p2",
+    "noise_level": "medium",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 16,
+      "depth_after": 26,
+      "ops_before": {
+        "cx": 8,
+        "rx": 6,
+        "rz": 4,
+        "h": 3,
+        "measure": 3,
+        "barrier": 1
+      },
+      "ops_after": {
+        "rz": 28,
+        "sx": 15,
+        "cx": 8,
+        "measure": 3,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 13,
+      "one_qubit_gates_after": 43,
+      "two_qubit_gates_before": 8,
+      "two_qubit_gates_after": 8,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0017155997920781374,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "111": 0.366943359375,
+        "000": 0.35205078125,
+        "001": 0.064453125,
+        "100": 0.065185546875,
+        "110": 0.064208984375,
+        "011": 0.06494140625,
+        "010": 0.01220703125,
+        "101": 0.010009765625
+      },
+      "noisy": {
+        "110": 0.083251953125,
+        "000": 0.30810546875,
+        "001": 0.0732421875,
+        "100": 0.075927734375,
+        "111": 0.31005859375,
+        "101": 0.034912109375,
+        "011": 0.081787109375,
+        "010": 0.03271484375
+      },
+      "mitigated": {
+        "001": 0.06831868489583333,
+        "111": 0.32800292968749983,
+        "100": 0.0701904296875,
+        "101": 0.02638753255208332,
+        "011": 0.076904296875,
+        "010": 0.025614420572916657,
+        "110": 0.07956949869791666,
+        "000": 0.32501220703125017
+      },
+      "scale_dists": {
+        "1": {
+          "110": 0.083251953125,
+          "000": 0.30810546875,
+          "001": 0.0732421875,
+          "100": 0.075927734375,
+          "111": 0.31005859375,
+          "101": 0.034912109375,
+          "011": 0.081787109375,
+          "010": 0.03271484375
+        },
+        "3": {
+          "110": 0.095703125,
+          "000": 0.26513671875,
+          "001": 0.089599609375,
+          "100": 0.08984375,
+          "111": 0.269287109375,
+          "101": 0.04931640625,
+          "010": 0.044677734375,
+          "011": 0.096435546875
+        },
+        "5": {
+          "101": 0.06689453125,
+          "000": 0.233154296875,
+          "010": 0.059326171875,
+          "100": 0.100830078125,
+          "111": 0.234375,
+          "110": 0.10205078125,
+          "001": 0.09814453125,
+          "011": 0.105224609375
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "111": 1503,
+        "000": 1442,
+        "001": 264,
+        "100": 267,
+        "110": 263,
+        "011": 266,
+        "010": 50,
+        "101": 41
+      },
+      "noisy": {
+        "110": 341,
+        "000": 1262,
+        "001": 300,
+        "100": 311,
+        "111": 1270,
+        "101": 143,
+        "011": 335,
+        "010": 134
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.100830078125,
+      "tvd_mitigated": 0.06597900390624997,
+      "tvd_relative_error_reduction_pct": 34.56416464891044,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.9808505286268624,
+      "fidelity_mitigated": 0.9905642307091681,
+      "fidelity_delta": 0.009713702082305709,
+      "infidelity_noisy": 0.019149471373137605,
+      "infidelity_mitigated": 0.009435769290831897,
+      "relative_error_reduction_pct": 50.72569311720972,
+      "hellinger_dist_noisy": 0.0980867864553667,
+      "hellinger_dist_mitigated": 0.06876820981568335,
+      "hellinger_relative_error_reduction_pct": 29.890444675771327
+    }
+  },
+  {
+    "circuit_name": "qaoa_ansatz_3q_p2",
+    "noise_level": "high",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 16,
+      "depth_after": 26,
+      "ops_before": {
+        "cx": 8,
+        "rx": 6,
+        "rz": 4,
+        "h": 3,
+        "measure": 3,
+        "barrier": 1
+      },
+      "ops_after": {
+        "rz": 28,
+        "sx": 15,
+        "cx": 8,
+        "measure": 3,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 13,
+      "one_qubit_gates_after": 43,
+      "two_qubit_gates_before": 8,
+      "two_qubit_gates_after": 8,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "compute_time_sec": 0.0016526998952031136,
+      "hilbert_dim": 8,
+      "memory_bytes": 128,
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "111": 0.366943359375,
+        "000": 0.35205078125,
+        "001": 0.064453125,
+        "100": 0.065185546875,
+        "110": 0.064208984375,
+        "011": 0.06494140625,
+        "010": 0.01220703125,
+        "101": 0.010009765625
+      },
+      "noisy": {
+        "110": 0.097900390625,
+        "000": 0.251953125,
+        "001": 0.096435546875,
+        "100": 0.093505859375,
+        "111": 0.25341796875,
+        "101": 0.0546875,
+        "010": 0.05322265625,
+        "011": 0.098876953125
+      },
+      "mitigated": {
+        "001": 0.09216308593749997,
+        "111": 0.27343750000000017,
+        "100": 0.08848063151041664,
+        "101": 0.045654296875000014,
+        "011": 0.09421793619791663,
+        "010": 0.04329427083333331,
+        "110": 0.09193929036458327,
+        "000": 0.27081298828125
+      },
+      "scale_dists": {
+        "1": {
+          "110": 0.097900390625,
+          "000": 0.251953125,
+          "001": 0.096435546875,
+          "100": 0.093505859375,
+          "111": 0.25341796875,
+          "101": 0.0546875,
+          "010": 0.05322265625,
+          "011": 0.098876953125
+        },
+        "3": {
+          "101": 0.088623046875,
+          "001": 0.11474609375,
+          "010": 0.08447265625,
+          "100": 0.1123046875,
+          "000": 0.185546875,
+          "110": 0.11083984375,
+          "111": 0.187744140625,
+          "011": 0.11572265625
+        },
+        "5": {
+          "101": 0.103515625,
+          "001": 0.121337890625,
+          "010": 0.10205078125,
+          "100": 0.12060546875,
+          "000": 0.153564453125,
+          "110": 0.12255859375,
+          "111": 0.15283203125,
+          "011": 0.12353515625
+        }
+      }
+    },
+    "raw_counts": {
+      "ideal": {
+        "111": 1503,
+        "000": 1442,
+        "001": 264,
+        "100": 267,
+        "110": 263,
+        "011": 266,
+        "010": 50,
+        "101": 41
+      },
+      "noisy": {
+        "110": 401,
+        "000": 1032,
+        "001": 395,
+        "100": 383,
+        "111": 1038,
+        "101": 224,
+        "010": 218,
+        "011": 405
+      }
+    },
+    "metrics": {
+      "tvd_noisy": 0.213623046875,
+      "tvd_mitigated": 0.17474365234374983,
+      "tvd_relative_error_reduction_pct": 18.200000000000077,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.9369902544803668,
+      "fidelity_mitigated": 0.956423993488058,
+      "fidelity_delta": 0.019433739007691186,
+      "infidelity_noisy": 0.06300974551963323,
+      "infidelity_mitigated": 0.043576006511942045,
+      "relative_error_reduction_pct": 30.842433733740155,
+      "hellinger_dist_noisy": 0.17893415183786784,
+      "hellinger_dist_mitigated": 0.14842735144512734,
+      "hellinger_relative_error_reduction_pct": 17.049177074023692
+    }
+  },
+  {
+    "circuit_name": "ghz_state_3q",
+    "noise_level": "extreme_stress_test",
+    "shots": 4096,
+    "transpilation": {
+      "target_label": "hardware-like synthetic target (linear nearest-neighbor coupling + transmon basis)",
+      "optimization_level": 1,
+      "qubits_before": 3,
+      "qubits_after": 4,
+      "depth_before": 4,
+      "depth_after": 6,
+      "ops_before": {
+        "measure": 3,
+        "cx": 2,
+        "h": 1,
+        "barrier": 1
+      },
+      "ops_after": {
+        "measure": 3,
+        "rz": 2,
+        "cx": 2,
+        "sx": 1,
+        "barrier": 1
+      },
+      "one_qubit_gates_before": 1,
+      "one_qubit_gates_after": 3,
+      "two_qubit_gates_before": 2,
+      "two_qubit_gates_after": 2,
+      "swap_gates_inserted": 0
+    },
+    "classical_reference": {
+      "n_qubits": 3,
+      "hilbert_dimension": 8,
+      "classical_compute_time_sec": 0.0005913001950830221,
+      "statevector_memory_bytes": 128,
+      "exact_probabilities": {
+        "000": 0.4999999999999999,
+        "111": 0.4999999999999999
+      },
+      "scaling_analysis": {
+        "memory_formula": "2^N * 16 bytes (complex128)",
+        "memory_at_current_n_bytes": 128,
+        "memory_at_n20_mb": 16.0,
+        "memory_at_n30_gb": 16.0,
+        "memory_at_n40_tb": 16.0
+      }
+    },
+    "distributions": {
+      "ideal": {
+        "000": 0.4931640625,
+        "111": 0.5068359375
+      },
+      "noisy": {
+        "111": 0.251220703125,
+        "000": 0.24609375,
+        "010": 0.07666015625,
+        "110": 0.09765625,
+        "100": 0.078125,
+        "101": 0.077392578125,
+        "001": 0.100341796875,
+        "011": 0.072509765625
+      },
+      "mitigated": {
+        "001": 0.09517415364583334,
+        "111": 0.26902262369791663,
+        "100": 0.07318115234375003,
+        "101": 0.068359375,
+        "011": 0.06459554036458333,
+        "010": 0.0711669921875,
+        "110": 0.09383138020833331,
+        "000": 0.26466878255208337
+      },
+      "scale_dists": {
+        "1": {
+          "111": 0.251220703125,
+          "000": 0.24609375,
+          "010": 0.07666015625,
+          "110": 0.09765625,
+          "100": 0.078125,
+          "101": 0.077392578125,
+          "001": 0.100341796875,
+          "011": 0.072509765625
+        },
+        "3": {
+          "110": 0.127685546875,
+          "111": 0.18408203125,
+          "000": 0.1806640625,
+          "001": 0.125732421875,
+          "010": 0.09619140625,
+          "100": 0.099609375,
+          "101": 0.093017578125,
+          "011": 0.093017578125
+        },
+        "5": {
+          "101": 0.111572265625,
+          "001": 0.133056640625,
+          "010": 0.10546875,
+          "011": 0.10791015625,
+          "110": 0.130859375,
+          "000": 0.149169921875,
+          "100": 0.107177734375,
+          "111": 0.15478515625
+        }
+      }
+    },
+    "raw_counts": {},
+    "metrics": {
+      "tvd_noisy": 0.502685546875,
+      "tvd_mitigated": 0.46630859375,
+      "tvd_relative_error_reduction_pct": 7.236522583778533,
+      "fidelity_ideal": 1.0,
+      "fidelity_noisy": 0.4973130471322334,
+      "fidelity_mitigated": 0.5336873492992655,
+      "fidelity_delta": 0.036374302167032135,
+      "infidelity_noisy": 0.5026869528677667,
+      "infidelity_mitigated": 0.46631265070073447,
+      "relative_error_reduction_pct": 7.235974985927387,
+      "hellinger_dist_noisy": 0.542950956204763,
+      "hellinger_dist_mitigated": 0.5190962518695862,
+      "hellinger_relative_error_reduction_pct": 4.393528377207694
+    }
+  }
+]

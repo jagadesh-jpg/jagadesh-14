@@ -1,0 +1,53 @@
+{
+  "job_id": "db37iaqqfgmc73d09rm0",
+  "backend": "ibm_kingston",
+  "circuit": "non_local_bell_3q",
+  "shots": 1024,
+  "transpile_info": {
+    "backend_name": "ibm_kingston",
+    "logical_qubits": 3,
+    "physical_qubits_backend": 156,
+    "logical_depth": 3,
+    "transpiled_depth": 8,
+    "logical_ops": {
+      "measure": 3,
+      "h": 1,
+      "cx": 1,
+      "barrier": 1
+    },
+    "transpiled_ops": {
+      "rz": 6,
+      "sx": 3,
+      "measure": 3,
+      "cz": 1,
+      "barrier": 1
+    },
+    "one_qubit_gates_before": 1,
+    "one_qubit_gates_after": 9,
+    "two_qubit_gates_before": 1,
+    "two_qubit_gates_after": 1,
+    "swap_gates_inferred": 0,
+    "optimization_level": 1
+  },
+  "distributions": {
+    "reference": {
+      "101": 0.521484375,
+      "000": 0.478515625
+    },
+    "hardware_raw": {
+      "000": 0.4990234375,
+      "101": 0.4736328125,
+      "010": 0.0009765625,
+      "001": 0.0048828125,
+      "100": 0.0205078125,
+      "110": 0.0009765625
+    }
+  },
+  "metrics": {
+    "reference_fidelity": 1.0,
+    "hardware_raw_fidelity": 0.9714960067419534,
+    "hardware_raw_infidelity": 0.028503993258046645,
+    "hardware_raw_tvd": 0.0478515625,
+    "hardware_raw_hellinger_dist": 0.11981247878758257
+  }
+}

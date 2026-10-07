@@ -1,0 +1,17 @@
+{
+  "job_id": "db37iaqqfgmc73d09rm0",
+  "backend": "ibm_kingston",
+  "circuit": "non_local_bell_3q",
+  "raw_counts": {
+    "000": 511,
+    "101": 485,
+    "010": 1,
+    "001": 5,
+    "100": 21,
+    "110": 1
+  },
+  "reference_counts": {
+    "101": 534,
+    "000": 490
+  }
+}
