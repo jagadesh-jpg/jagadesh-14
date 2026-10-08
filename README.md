@@ -2,7 +2,7 @@
 
 ### Qiskit Fall Fest 2026 GITAM × IBM Quantum Hackathon — Industry Challenge I7
 **Participant Role:** Quantum Software Engineer  
-**Repository:** [jagadesh-14](https://github.com/jagadesh-jpg/jagadesh-14.git)
+**Repository:** [jagadesh-14](https://github.com/jagadesh-jpg/jagadesh-14)
 
 [![Qiskit Version](https://img.shields.io/badge/Qiskit-2.5.2-6929C4.svg)](https://qiskit.org/)
 [![Qiskit Aer](https://img.shields.io/badge/Qiskit_Aer-0.17.2-0062FF.svg)](https://github.com/Qiskit/qiskit-aer)
@@ -132,26 +132,25 @@ jagadesh-14/
 ## 4. Scientific Methodology
 
 ### Controlled Synthetic Noise Profiles
-All synthetic experiments are strictly isolated under **Controlled Synthetic Noise Profiles** (representative transmon error channels):
+All synthetic experiments are strictly isolated under **Controlled Synthetic Noise Profiles** (representative synthetic error channels):
 - **1-Qubit Gate Error**: Depolarizing channel $\mathcal{E}_1(\rho) = (1 - p_1) \rho + \frac{p_1}{3} \sum_{U} U \rho U^\dagger$.
 - **2-Qubit Gate Error**: Depolarizing channel $\mathcal{E}_2(\rho) = (1 - p_2) \rho + \frac{p_2}{15} \sum_{U} U \rho U^\dagger$.
 - **Readout / Assignment Error Matrix**: Asymmetric stochastic bit-flip channel.
 
 | Profile | 1Q Error ($p_1$) | 2Q Error ($p_2$) | Readout Flip ($P(1|0), P(0|1)$) | Description |
 |---|---|---|---|---|
-| **Low** | $0.0005$ | $0.0050$ | $0.010$ ($1.0\%$) | High-coherence superconducting regime |
-| **Medium** | $0.0015$ | $0.0150$ | $0.025$ ($2.5\%$) | Typical NISQ transmon regime |
-| **High** | $0.0040$ | $0.0400$ | $0.050$ ($5.0\%$) | Heavy decoherence and cross-talk regime |
-
+| **Low** | $0.0005$ | $0.0050$ | $0.010$ ($1.0\%$) | Representative low-noise level |
+| **Medium** | $0.0015$ | $0.0150$ | $0.025$ ($2.5\%$) | Representative moderate-noise level |
+| **High** | $0.0040$ | $0.0400$ | $0.050$ ($5.0\%$) | Representative high-noise level |
 ### Target Transpilation
-Circuits are compiled against a **hardware-like synthetic target** (1D linear nearest-neighbor coupling $[0 - 1 - 2 - 3]$, native basis $\{CX, ID, R_z, SX, X\}$). Non-local operations (such as $CX(0, 2)$ in `non_local_bell_3q`) force SWAP insertion ($1 \text{ SWAP} \equiv 3 CX$), expanding depth from $3 \to 5$ and 2Q gates from $1 \to 4$.
+Circuits are compiled against a **hardware-like synthetic target** (1D linear nearest-neighbor coupling $[0 - 1 - 2 - 3]$, native basis $\{CX, ID, R_z, SX, X\}$). This synthetic target models common compilation constraints such as limited nearest-neighbor connectivity and restricted native gate bases. Non-local operations (such as $CX(0, 2)$ in `non_local_bell_3q`) force SWAP insertion ($1 \text{ SWAP} \equiv 3 CX$), expanding depth from $3 \to 5$ and 2Q gates from $1 \to 4$.
 
 ### Zero-Noise Extrapolation (ZNE) Mitigation
 - **Unitary Gate Folding**: Scales noise digitally via $G \to G (G^\dagger G)^k$ for odd scale factors $\lambda \in \{1, 3, 5\}$ while strictly preserving measurement terminations.
 - **Richardson Extrapolation**: Fits $P_\lambda(x) = c_0(x) + c_1(x) \lambda$ to infer the zero-noise limit $P_{mit}(x) = \max(0, c_0(x))$, followed by $L_1$ normalization.
 
 ### Metric Definitions
-- **Classical Bhattacharyya / Hellinger Fidelity**: $F_{cl}(P, Q) = \left( \sum_x \sqrt{P(x) Q(x)} \right)^2 \in [0, 1]$.
+- **Classical Fidelity (Squared Bhattacharyya Coefficient)**: $F_{cl}(P, Q) = \left( \sum_x \sqrt{P(x) Q(x)} \right)^2 \in [0, 1]$.
 - **Infidelity / Error**: $\epsilon = 1 - F_{cl}$.
 - **Relative Error Reduction**:
   $$\text{Relative Error Reduction} = \frac{\epsilon_{raw} - \epsilon_{mit}}{\epsilon_{raw}} \times 100\%$$
@@ -187,11 +186,11 @@ Circuits are compiled against a **hardware-like synthetic target** (1D linear ne
 
 ## 6. Real IBM Quantum Hardware Validation Layer
 
-An authentic, single physical execution was conducted on an IBM Quantum transmon processor to provide physical hardware evidence:
+An authentic, single physical execution was conducted on the IBM Quantum backend `ibm_kingston` to provide physical hardware evidence:
 
 | Parameter | Value |
 |---|---|
-| **Physical Quantum Backend** | **`ibm_kingston`** (IBM Quantum Eagle / Heron architecture) |
+| **Physical Quantum Backend** | **`ibm_kingston`** (IBM Quantum backend; 156 physical qubits) |
 | **Physical Qubit Count** | 156 Physical Qubits |
 | **Authentic Job ID** | [`db37iaqqfgmc73d09rm0`](file:///results/hardware/metadata/ibm_kingston_non_local_bell_3q_20261007_165400_meta.json) |
 | **Execution Status** | `COMPLETED` (Physical queue + execution time: 616.4 seconds) |
@@ -224,7 +223,7 @@ $$\text{Memory} = 2^N \times 16 \text{ bytes (for double-precision complex128 am
 - **$N = 40$ qubits**: $2^{40} \times 16 = \mathbf{16\text{ TB}}$.
 - **$N = 50$ qubits**: $2^{50} \times 16 = \mathbf{16\text{ PB}}$ *(Classical Memory Wall)*.
 
-> **Zero Quantum Advantage Claim:** For small benchmark circuits ($N \le 3$), classical CPU simulation is mathematically exact and vastly faster than quantum sampling. Quantum hardware scales in physical qubits $O(N)$ for state preparation, but suffers from physical device noise and shot variance.
+> **Zero Quantum Advantage Claim:** For small benchmark circuits ($N \le 3$), classical CPU simulation is mathematically exact and vastly faster than quantum sampling. This section documents the classical baseline and the exponential statevector memory scaling; it is not a quantum advantage claim.
 
 ---
 
@@ -247,7 +246,7 @@ In strict accordance with competition rules:
 - Python 3.11.x
 - Qiskit 2.5.2
 - Qiskit Aer 0.17.2
-- Qiskit IBM Runtime 0.50.0
+- qiskit-ibm-runtime 0.50.0
 
 ```bash
 # Clone repository
